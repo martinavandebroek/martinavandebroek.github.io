@@ -1,0 +1,36 @@
+---
+title: "mODa14"
+description: |
+  <b>Registration</b>
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<div style="text-align: center; font-size: 1.4em; font-weight: bold; color: #b30000; background-color: #ffe6e6; padding: 12px; border-radius: 8px; margin: 20px 0;">
+Registration for the workshop is now closed.
+</div>
+
+
+**Registration & Accommodation Fees:**
+
+ -	Total price single room occupancy: € 845
+
+ -	Total price shared room occupancy: € 675
+
+*Accommodation prices (incl. VAT): *
+
+ - 	Single occupancy: €397.97
+ 
+ - 	Shared room: €329.07
+ 
+ 
+*Registration  prices (VAT exempt according to Article 44, § 2, 4° of the Belgian VAT Code): *
+
+ - 	Single room occupancy or without accommodation:: €447.03
+
+ - 	Shared room: €345,93
+ 
+ 
+<b>Detailed information regarding the registration procedure is provided in the email sent to the participants.<b/>

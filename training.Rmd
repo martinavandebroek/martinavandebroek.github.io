@@ -1,0 +1,95 @@
+---
+title: ""
+#description: |
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r soton-crest, out.width = "40%", fig.align = "center"}
+knitr::include_graphics("images/moda14.png")
+```
+<center><b>
+<span style="font-size: 37px;">TRAINING COURSE ON DESIGN OF EXPERIMENTS</span></b></center>
+
+<br>
+
+### Logistics
+
+-	<b>Location:</b> [Old Abbey](https://www.oudeabdij.be/english.html), Drongenplein 27, 9031 Drongen (Ghent), Belgium
+
+-	<b>Date:</b>  Sunday, June 14, 2026
+
+-	<b>Timing: </b>
+    - 12:30 - sandwich lunch
+    - 13:00 - start of scientific program
+    - 18:30 - networking event, included in the registration fee.
+
+
+
+<br>
+
+### Scientific Program
+
+-	<b>Stating the Problems: Design of Experiments in the Pharmaceutical Industry</b>  - [Valerii Fedorov](https://www.linkedin.com/in/valerii-v-fedorov/)
+
+-	<b>Towards a Common Language: Foundations of Design of Experiments</b> - [Jesús López Fidalgo](https://lopezfidalgosite.wordpress.com)
+
+-	<b>Modern Screening Designs: Fitting Many Effects</b> - 
+[Peter Goos](https://www.kuleuven.be/wieiswie/nl/person/00006560)
+
+-	<b>Design of Experiments for Dependent Observations</b> - [Werner Müller](https://www.jku.at/institut-fuer-angewandte-statistik/ueber-uns/team/univ-prof-mag-dr-werner-g-mueller/)
+
+-	<b>Bayesian Optimization & Kriging: Learning and Optimizing on Complex Surfaces</b> - [Luc Pronzato](https://www.i3s.unice.fr/~pronzato/node/1) / [David Ginsbourger](https://ginsbourger.github.io/) 
+
+-	<b>Closing and Outlook</b> - [Valerii Fedorov](https://www.linkedin.com/in/valerii-v-fedorov/)
+
+
+The training will be interactive and filled with practical examples. To bridge theory and practice, sessions will include software demonstrations using both open-source and commercial tools.
+
+
+<br>
+
+### Networking Opportunities
+There will be plenty of time to connect during coffee breaks and the networking dinner. The dinner will also be open to attendees arriving for the mODa14 conference, offering a unique chance to engage with young researchers and experienced academic experts in the field of Design of Experiments.
+
+<br>
+
+### Registration Options
+
+-	Group Registration (up to 10 participants): €2,000
+
+-	Individual Registration: €300
+
+-	Virtual Option: €100
+
+
+
+
+The training is not-for-profit; all contributions will support mODa14 funding. Training materials are included in all options and will be shared prior to the event.
+
+
+<b>Note:</b> If you have specific design challenges you’d like addressed during the training, please reach out. The organizers are happy to demonstrate their expertise and enthusiasm on real-world problems.
+
+
+<br>
+
+### Registration  <span style="color:red;"> (closed)</span>
+
+
+- <b>If you need an invoice:</b>:
+    - fill out the [CUSTOMER_INFORMATION_SHEET](files/cis-en.pdf) 
+    - email the form to admin_KBI@kuleuven.be; in your mail, please indicate whether you want to make a group registration (2000 euro), register for in person attendance (300 euro) or online attendance (100 euro). 
+    - <b>IMPORTANT</b>: Please do not make any payment until you have received the invoice.
+
+<br>
+
+- <b>If you do not need an invoice:</b> transfer the registration fee to:
+    - KU Leuven
+    - IBAN: BE09 4320 0000 1157
+    - Reference: ###400/0029/33681 + name participant### 
+    - <b>IMPORTANT</b>: If you pay by bank transfer you cannot request an invoice afterwards
+    - You can request a <b>proof of payment</b> by email to martina.vandebroek@kuleuven.be. 
+

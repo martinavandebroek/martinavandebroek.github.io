@@ -1,0 +1,173 @@
+---
+title: "Pictures of mODa14"
+output:
+  html_document:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+
+all_files <- sort(list.files("pictures"))
+
+pics <- all_files[
+  grepl("\\.(jpg|jpeg|png|webp|gif)$",
+        all_files,
+        ignore.case = TRUE)
+]
+
+videos <- all_files[
+  grepl("\\.(mp4|mov|webm)$",
+        all_files,
+        ignore.case = TRUE)
+]
+
+```
+
+<style>
+html {
+  visibility: hidden;
+}
+</style>
+
+<div class="slideshow-container">
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+```{r slides, echo=FALSE, results='asis'}
+
+for (p in pics) {
+
+  cat(
+    paste0(
+      '<img class="slide" src="pictures/',
+      p,
+      '" loading="lazy">\n'
+    )
+  )
+
+}
+
+for (v in videos) {
+
+  cat(
+    paste0(
+      '<video class="slide" controls preload="metadata">',
+      '<source src="pictures/',
+      v,
+      '" type="video/mp4">',
+      '</video>\n'
+    )
+  )
+
+}
+
+```
+
+</div>
+
+<script>
+
+let slideIndex = 1;
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  showSlides(slideIndex);
+
+  document.documentElement.style.visibility = "visible";
+});
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+
+  let slides = document.getElementsByClassName("slide");
+
+  if (slides.length === 0) return;
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  }
+
+});
+
+</script>
+
+<style>
+
+body {
+  max-width: 100%;
+  margin: auto;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 95vw;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  background-color: black;
+}
+
+video.slide {
+  width: 100%;
+  max-height: 85vh;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+</style>

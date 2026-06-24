@@ -1,0 +1,66 @@
+---
+title: "mODa14"
+description: |
+  <b>Travel</b>
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<div style="font-size:90%; max-width:750px; margin:auto; line-height:1.4;">
+
+**Address:Old Abbey, Drongenplein 27, 9031 Drongen (Ghent), Belgium**
+
+
+
+### Getting from Ghent Sint-Pieters Station to the Old Abbey
+
+The Old Abbey is located just 5 kilometers from Ghent and is easily accessible by public transport. On the map below, the route by train is shown in red, and the route by bus in orange.
+
+```{r mODa-logo, out.width = "90%", fig.align = "left"}
+knitr::include_graphics("images/gentdrongen2.png")
+```
+
+<br>
+
+**By train:**
+On Sundays, there is unfortunately only one train per hour (at xx:43) from Ghent Sint-Pieters to Drongen station. The journey takes approximately 5 minutes and costs 3 to 5 euros. This is a local train with final destination Brugge (Zeebrugge). The Old Abbey is a 750-meter walk from Drongen station.
+
+**By bus:**
+(Subject to change, as schedules are updated at the end of May)
+Bus 50 runs on Sundays every hour at xx:19 from platform 14 in front of Ghent Sint-Pieters to Drongen Rotonde, a 500-meter walk from the Old Abbey. The cost of 3 euros can be paid on the bus via Maestro, Mastercard, VPAY, Visa, Apple Pay, Google Pay, Fitbit Pay, or Garmin Pay.
+
+**By taxi:**
+It takes approximately 7 minutes by taxi from Ghent Station to the Old Abbey. Expected cost is around 20 euros.
+
+<br>
+<br>
+
+### Getting to Ghent Sint-Pieters Station
+
+
+**By plane to Brussels Airport and then by train to Ghent:**
+The closest airport to Ghent is Brussels National Airport (BRU), also known as Zaventem, 67 kilometers from Ghent. There are several direct flights per day from major European and North-American cities. The train station is located underneath the airport and accessible via lifts and escalators in the arrivals hall. The departure station is called Brussel Nationaal Luchthaven / Brussels National Airport. The destination station is Gent Sint-Pieters. Tickets can be bought at the train station for about 15 euros per person, one-way.
+
+On Sundays, there is only 1 direct train per hour to Ghent at xx:24, which takes 55 minutes. The final destination of this IC train usually is Oostende, Knokke, or De Panne. You can also take one of the other two trains per hour, but these require changing trains in one of the three Brussels stations (Bruxelles Nord / Brussel Noord, Bruxelles Central / Brussel Centraal, or Bruxelles Midi / Brussel Zuid) to connect to an intercity (IC) train to Ghent.
+
+
+<b>Taxi note:</b> Taxis are available outside the airport building but are very expensive in Belgium. A ride from Brussels Airport to Ghent or Drongen costs between 175 and 250 euros.
+
+
+<b>Other convenient airports:</b> Amsterdam Schiphol (225 km / 140 mi) and Paris Charles de Gaulle / Roissy (270 km / 167 mi). Both airports have (high-speed) train connections to Ghent Sint-Pieters station. Tickets can be booked via the Belgian, French, or Dutch railway websites. Enter Gent Sint-Pieters as your destination.
+
+
+
+<br>
+<br>
+
+### Travelling by car
+
+
+If you are travelling by car, please use the address above for navigation. The Old Abbey offers approximately 35 on-site parking spaces. Alternatively, two free public parking lots are available at Drongen railway station nearby.
+
+</div> 
+
+

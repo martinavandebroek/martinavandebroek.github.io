@@ -1,0 +1,3731 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>mODa14</title>
+
+  <meta property="description" itemprop="description" content="ABSTRACTS"/>
+
+
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="mODa14"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="ABSTRACTS"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="mODa14"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="mODa14"/>
+  <meta property="twitter:description" content="ABSTRACTS"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["mODa14"]},{"type":"character","attributes":{},"value":["ABSTRACTS"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        tolerance: 5,
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  /* adjust viewport for navbar height */
+  /* helps vertically center bootstrap (non-distill) content */
+  .min-vh-100 {
+    min-height: calc(100vh - 100px) !important;
+  }
+
+  </style>
+
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                : '';
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description || ''}
+                  </div>
+                  <div class="search-item-preview">
+                    ${img}
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  .nav-search {
+    font-size: x-small;
+  }
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+    font-size: 100%;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+    border-top: none;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+  </style>
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+
+  /* Compacte lijst met ID 'compact1' */
+  #compact1 li {
+    line-height: 1.1;    /* minder interlinie */
+    margin-bottom: 0.1em; /* iets minder ruimte tussen items */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       0px;
+    --text-color:       black;
+    --text-size:        15px;
+    --hover-color:      black;
+    --bkgd-color:       white;
+  }
+
+  .distill-site-footer {
+    --text-color:       black;
+    --text-size:        15px;
+    --hover-color:      black;
+    --bkgd-color:       white;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+  /*
+  .distill-site-header .title, .d-title {
+    display: none;
+  }
+  */
+
+  /*
+  .distill-site-header .logo img {
+    max-height: 60px;
+  }
+  */
+
+  /*
+  .headroom {
+    top: 20px;
+  }
+  */
+
+  /*
+  body > header > nav > div.nav-left > a {
+    display: none;
+  }
+  */
+
+
+
+
+  .distill-site-header .logo img {
+      display: inline-block;
+      height: 60px;
+      max-height: 60px;
+  }
+
+  /*
+  .distill-site-header {
+      height: 200px;
+  }
+
+
+
+
+  .distill-site-header .nav-right {
+      top: 25%;
+      position: relative;
+  }
+
+  d-title{
+    margin-top: 50px;
+  }
+  */
+
+  /* =========================
+     NAVBAR BACKGROUND FIX
+     ========================= */
+  .distill-site-nav {
+    background-color: white !important;
+    background: white !important;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  /* links in navbar */
+  .distill-site-nav a {
+    color: #000 !important;
+  }
+
+  /* =========================
+     LOGO SIZE FIX (BELANGRIJK)
+     ========================= */
+  .distill-site-nav .nav-logo img {
+    height: 70px !important;
+    max-height: 70px !important;
+    width: auto !important;
+    display: block !important;
+  }
+
+
+  .speaker-title {
+    margin-left: 120px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #000;
+  }</style>
+  <style type="text/css">
+  /* base style */
+
+  /* FONT FAMILIES */
+
+  :root {
+    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body,
+  .posts-list .post-preview p,
+  .posts-list .description p {
+    font-family: var(--body-font), var(--body-default);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .posts-list .post-preview h2,
+  .posts-list .description h2 {
+    font-family: var(--heading-font), var(--heading-default);
+  }
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: var(--mono-font), var(--mono-default);
+  }
+
+
+  /*-- TITLE --*/
+  d-title h1,
+  .posts-list > h1 {
+    color: var(--title-color, black);
+  }
+
+  d-title h1 {
+    font-size: var(--title-size, 50px);
+  }
+
+  /*-- HEADERS --*/
+  d-article h1,
+  d-article h2,
+  d-article h3,
+  d-article h4,
+  d-article h5,
+  d-article h6 {
+    color: var(--header-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- BODY --*/
+  d-article > p,  /* only text inside of <p> tags */
+  d-article > ul, /* lists */
+  d-article > ol {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+    font-size: var(--body-size, 1.06rem);
+  }
+
+
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-size: var(--code-size, 14px);
+  }
+
+  /*-- ASIDE --*/
+  d-article aside {
+    font-size: var(--aside-size, 12px);
+    color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption,
+  .figure .caption {
+    font-size: var(--fig-cap-size, 13px);
+    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- METADATA --*/
+  d-byline h3 {
+    font-size: var(--heading-size, 0.6rem);
+    color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-byline {
+    font-size: var(--body-size, 0.8rem);
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  d-byline a,
+  d-article d-byline a {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+    font-size: var(--heading-size, 18px);
+  }
+
+  .d-contents nav a {
+    font-size: var(--contents-size, 13px);
+  }
+
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--heading-size, 15px);
+    color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  }
+
+  d-appendix {
+    font-size: var(--text-size, 0.8em);
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-appendix d-footnote-list a.footnote-backlink {
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  .distill-site-header .title {
+    font-size: var(--title-size, 18px);
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .distill-site-header a,
+  .nav-dropdown .nav-dropbtn {
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    font-size: var(--text-size, 15px);
+  }
+
+  .distill-site-header a:hover,
+  .nav-dropdown:hover .nav-dropbtn {
+    color: var(--hover-color, white);
+  }
+
+  .distill-site-header {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer a:hover {
+    color: var(--hover-color, white);
+  }</style>
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"mODa14","description":"ABSTRACTS","authors":[]}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a class="logo" href="index.html">
+<img src="images/moda14.png" alt="Logo"/>
+</a>
+<a href="index.html" class="title">mODa14</a>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="organisation.html">Organisation</a>
+<a href="program.html">Program</a>
+<a href="abstracts.html">Abstracts</a>
+<a href="location.html">Location</a>
+<a href="travel.html">Travel</a>
+<a href="registration.html">Registration</a>
+<a href="history.html">History</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>mODa14</h1>
+
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p>ABSTRACTS</p>
+</div>
+
+
+<div class="d-article">
+<a id='Ahipasaoglu'></a>
+<h2 style="margin-top:40px;">
+Ahipasaoglu Selin
+</h2>
+<p>
+<strong>University of Southampton</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal experimental design under linear constraints: a column generation framework</i>
+</div>
+<br><br>
+<div>
+We present a generalized column generation algorithm for solving large-scale optimal experimental design problems under linear constraints. The approach exploits the sparsity of optimal solutions and applies to D-optimal and A-optimal criteria, as well as their weighted mixtures.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Bailey'></a>
+<h2 style="margin-top:40px;">
+Bailey Rosemary
+</h2>
+<p>
+<strong>University of St Andrews</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Semi-Latin squares and their extensions</i>
+</div>
+<br><br>
+<div>
+A semi-Latin square is an n X n square array of cells, with each cell containing k plots. Treatments are allocated to these in such a way that each treatment occurs once in each row and once in each column. Now cells form another system of blocks. Previous work has been done on how to make the treatment allocation optimal. Extended semi-Latin squares incorporate another blocking factor. Now each column is subdivided into k columns, called lines. So cells and lines both form systems of incomplete blocks. So the problem of creating optimal (or, at least, near-optimal) designs becomes much harder.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Baur'></a>
+<h2 style="margin-top:40px;">
+Baur Pauline
+</h2>
+<p>
+<strong>TU Dortmund University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Designs for Nonlinear Regression with Dependent Errors using Matrix Norms</i>
+</div>
+<br><br>
+<div>
+(joint work with Kirsten Schorning andHolger Dette) The focus is on the design of experiments for nonlinear parametric regression curves, where the data may be dependent. We are particularly interested in determining sets of optimal time points where the corresponding observations result in a precise estimation of the unknown parameter. For that purpose, we use the transition between discrete-time and continuous-time data structures, assuming that the continuous model provides maximal information and serves as the benchmark for approximation. We derive the likelihood function and Fisher information matrices for both frameworks using results from stochastic analysis. We then determine the optimal time points for the discrete case such that a matrix-norm-based distance between the Fisher information matrices of the discrete and continuous models is minimal. A simulation study illustrates the advantages of the new approach, showing that the use of optimal designs yields substantially better parameter estimates than the use of uniform designs in terms of MSE and prediction. Starting with simple nonlinear regression models that include a parametric nonlinear regression function and a Brownian motion error process, we extend the methodology to more complex cases with time-dependent volatility functions.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Bect'></a>
+<h2 style="margin-top:40px;">
+Bect Julien
+</h2>
+<p>
+<strong>L2S / CentraleSupélec</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Uncertainty functionals revisited: Concavity and Jensen’s inequality (DPP)</i>
+</div>
+<br><br>
+<div>
+This article presents a theoretical study of uncertainty functionals on general measurable spaces. These functionals are fundamental in experimental design and global sensitivity analysis, where they are used to quantify variability and information content in probabilistic models. As first articulated in DeGroot’s seminal 1962 article, a natural requirement is that uncertainty should decrease on average when additional information is obtained. This requirement is equivalent to the probabilistic form of Jensen’s inequality on the space of probability measures. Our main results show that concavity is necessary but not sufficient for Jensen’s inequality to hold whenever the underlying measurable space is infinite. We also provide practicable sufficient conditions under which the desired property holds. These results contribute to a clearer mathematical foundation for uncertainty quantification. Several open questions are formulated.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Bertoglio'></a>
+<h2 style="margin-top:40px;">
+Bertoglio Cristóbal
+</h2>
+<p>
+<strong>University of Groningen</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>OED with k-space data: application to inverse hemodynamics</i>
+</div>
+<br><br>
+<div>
+Subject-specific cardiovascular models rely on parameter estimation using measurements such as 4D Flow MRI data. However, acquiring high-resolution, high-fidelity functional flow data is costly and taxing for the patient. As a result, there is growing interest in using highly undersampled MRI data to reduce acquisition time and thus the cost, while maximizing the information gain from the data. Examples of such recent work include inverse problems to estimate boundary conditions of aortic blood flow from highly undersampled k-space data. The undersampled data is selected based on a predefined sampling mask which can significantly influences the performance and the quality of the solution of the inverse problem. While there are many established sampling patterns to collect undersam- pled data, it remains unclear how to select the best sampling pattern for a given set of inference parameters. In this paper we propose an Optimal Experimental Design (OED) framework for MRI measurements in k-space, aiming to find optimal masks for estimating specific parameters directly from k-space. As OED is typically applied to sensor placement problems in spatial locations, this is, to our knowledge, the first time the technique is used in this context. We demonstrate that the masks optimized by employing OED consistently outperform conventional sampling patterns in terms of parameter estimation accuracy and variance, facilitating a speed-up of 10x of the acquisition time while maintaining accuracy.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Chazal'></a>
+<h2 style="margin-top:40px;">
+Chazal Clémentine
+</h2>
+<p>
+<strong>ENSAE, Paris</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>A Computable Measure of Suboptimality for Entropy-Regularised Variational Objectives</i>
+</div>
+<br><br>
+<div>
+Several emerging post-Bayesian methods target a probability distribution for which an entropy-regularised variational objective is minimised. This increased flexibility in- troduces a computational challenge, as one loses access to an explicit unnormalised density for the target. To mitigate this difficulty, we introduce a novel measure of sub- optimality called gradient discrepancy, and in particular a kernel gradient discrepancy (KGD) that can be explicitly computed. In the standard Bayesian context, KGD coin- cides with the kernel Stein discrepancy (KSD), and we obtain a novel characterisation of KSD as measuring the size of a variational gradient. Outside this familiar setting, KGD enables novel sampling algorithms to be developed and compared, even when unnormalised densities cannot be obtained. To illustrate this point several novel algo- rithms are proposed and studied, including a natural generalisation of Stein variational gradient descent, with applications to mean-field neural networks and predictively ori- ented posteriors presented. On the theoretical side, our principal contribution is to establish sufficient conditions for desirable properties of KGD, such as continuity and convergence control.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='delaCalle'></a>
+<h2 style="margin-top:40px;">
+de la Calle Carlos
+</h2>
+<p>
+<strong>University of Oviedo</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal subsampling in presence of model misspecification</i>
+</div>
+<br><br>
+<div>
+In Big Data settings, the covariates of a large population of N observations are often available at low cost, while obtaining the response variable might be expensive or time-consuming. In such settings, one must carefully select a subsample of size n for which the response will be measured and a supervised model subsequently fitted. Classical subsampling strategies, both random and deterministic, are typically designed under the assumption of a correctly specified model, and may therefore produce unreliable predictions when the working model is misspecified. In this work, we address the problem of selecting an optimal subsample of size n from a large population of N observations, with the goal of minimizing the Mean Squared Prediction Error (MSPE) at a set of target prediction points, when a linear working model is fitted to data generated by a true model that includes an unknown misspecification term. The MSPE decomposes into two additive components: the classical I-criterion, which controls prediction variance, and a bias component due to model misspecification. Since the latter depends on an unknown function, we derive two Upper-Bias criteria — upper bounds for the bias component that can be minimized independently of the misspecification. The tighter bound requires no assumption on the misspecification function; a coarser bound connects our framework to the low-condition-number approach of Meng et al. (2020). We apply a memetic algorithm to construct the set of non-dominated solutions with respect to the I-criterion and an Upper-Bias criterion, and identify three representative designs: the I-optimal subsample, the Upper-Bias optimal subsample, and a compromise optimal subsample corresponding to the elbow of the Pareto front. Preliminary simulation results, obtained under several misspecification structures and strengths, are promising, and a more thorough exploration of simulation scenarios is currently ongoing.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='deVries'></a>
+<h2 style="margin-top:40px;">
+de Vries Klazien
+</h2>
+<p>
+<strong>University of Groningen</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Bayesian D-optimal designs for GAMLSS in psychological test norming</i>
+</div>
+<br><br>
+<div>
+We develop Bayesian D-optimal designs for GAMLSS models commonly used in continuous norming of psychological tests, namely heteroscedastic normal and beta-binomial distributions. By applying Bayesian optimal design methodology to GAMLSS models, we demonstrate how prior normative data can be used to inform sampling designs for recalculating outdated normed scores. In a case study for a word development test, we derive exact Bayesian D-optimal designs and evaluate their sensitivity to prior specification. We find that the resulting designs are remarkably robust under moderately informative priors, closely resembling local D-optimal designs, while near-uninformative priors result in more space-filling designs.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Deldossi'></a>
+<h2 style="margin-top:40px;">
+Deldossi Laura
+</h2>
+<p>
+<strong>Università Cattolica del Sacro Cuore - Milan</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Random-X prediction error under model misspecification</i>
+</div>
+<br><br>
+<div>
+(joint work with Alvaro Cia-Mina, Jesus Lopez-Fidalgo and Chiara Tommasi) In recent years, advances in computing, particularly the internet, have enabled the collection of Big Data. This has been the key of the current boom of Artificial Intelligence, fed with huge amounts of data, not necessarily of good quality. Processing them with traditional analyses may be unaffordable and new techniques are continuously being developed. Optimal subsampling addresses this challenge by selecting a representative subset that preserves predictive accuracy while reducing computational and labeling costs. When the sampling strategy depends on an assumed model, a critical issue is model misspecification. We develop a theoretical framework for subsampling under misspecification with the goal to minimize a prediction error metric obtained integrating with respect to the marginal distribution of explanatory variables. A key contribution is a theorem that provides an analytical expression for “the best” inclusion probabilities in a Poisson sampling scheme, by connecting sampling theory and optimal experimental design for probability sub-measures. Theoretical results are validated through simulations, focusing on simple linear regression with explicit solutions. A real data application is also considered.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Eichhorn'></a>
+<h2 style="margin-top:40px;">
+Eichhorn Julia
+</h2>
+<p>
+<strong>TU Dortmund University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Detecting structural variations between different concentration-response experiments</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Eichhorn.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Eidsvik'></a>
+<h2 style="margin-top:40px;">
+Eidsvik Jo
+</h2>
+<p>
+<strong>NTNU, Norway</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Adaptive spatio-temporal sampling with marine robots</i>
+</div>
+<br><br>
+<div>
+The advent of drones with computing units provides new opportunities and challenges for statistical sampling. In this presentation, we focus on marine robots and in particular so-called autonomous underwater vehicles (AUV), that can be deployed for in-situ ocean sampling useful for surveying, monitoring or mapping purposes. Equipped with a computer unit, an AUV can sense the ocean environment, update its onboard model based on data, plan where and when to navigate for efficient spatio-temporal sampling efforts, and act using its engines and navigation systems. We demonstrate methods for combining spatio-temporal statistical modeling and autonomous robotic systems for efficient experimental designs. Building on Gaussian random field models, we present an approach for real-time AUV operation and planning. This relies on fast computation of acquisition functions like maximum expected improvement, minimum expected Bernoulli variance or entropy which have closed-form solutions for the Gaussian model and enable adaptive sampling. In several applications with ocean front mapping, mine tailings pollution monitoring or chlorophyll hotspot sampling, we develop, test and deploy algorithms for efficient AUV sampling.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Filova'></a>
+<h2 style="margin-top:40px;">
+Filova Lenka
+</h2>
+<p>
+<strong>Comenius University Bratislava</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Exact Designs of Multiresponse Experiments under Linear and Sparsity Constraints</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Filova.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Flournoy'></a>
+<h2 style="margin-top:40px;">
+Flournoy Nancy
+</h2>
+<p>
+<strong>University of Missouri</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Results and challenges in estimation for dose-finding designs</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Flournoy.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Friedli'></a>
+<h2 style="margin-top:40px;">
+Friedli Lea
+</h2>
+<p>
+<strong>Technical University of Munich</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>CRPS-Based Targeted Sequential Design with Application in Chemical Space</i>
+</div>
+<br><br>
+<div>
+Gaussian processes (GPs) have become a widely used tool for modeling unknown functions across various domains. In many applications, particular interest lies in a specific range of the response, with the goal of identifying inputs that lead to desired outputs. To enhance GP model performance in this setting, we employ weighted scoring rules to develop sequential design strategies that selectively augment the training dataset. Specifically, we study pointwise and integral criteria based on the threshold-weighted Continuous Ranked Probability Score (CRPS), using two different weighting measures. We showcase an application in synthetic chemistry, where the objective is to identify molecules with specific properties. However, the presented acquisition strategies are applicable to a wide range of fields and pave the way to further developing sequential design relying on scoring rules.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Frieri'></a>
+<h2 style="margin-top:40px;">
+Frieri Rosamarie
+</h2>
+<p>
+<strong>University of Bologna</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Combining information from adaptive experiments (DPP)</i>
+</div>
+<br><br>
+<div>
+Combining evidence across experiments is a fundamental problem for both statistical theory and practice. Yet a complete framework of guidelines discussing how aggregation should be approached across differing design settings remains underdeveloped. The problem becomes especially complex under adaptive randomization, in particular when experiments interact through their designs. In such settings, the allocation mechanism could be ancillary or not for the likelihood and may have an impact on the appropriate inference to carry out. This paper addresses the problem of combining data from multiple (adaptive) experiments and discusses how to effectively aggregate information. We address allocation-adaptive and covariate-adjusted procedures, as well as response-adaptive and covariate-adjusted response-adaptive designs, showing how the nature of these different procedures impacts on the information sharing from an inferential perspective. We further examine independent and interacting experiments, including concurrent studies in stratified populations and characterize the asymptotic behaviour of estimators. The results provide a useful perspective on when information borrowing across adaptive experiments preserves statistical validity and when additional work is required.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Gautier'></a>
+<h2 style="margin-top:40px;">
+Gautier Athénaïs
+</h2>
+<p>
+<strong>ONERA</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>SLGP-based surrogates for spatially dependent discrete outputs: modelling, uncertainty quantification, and data acquisition (DPP)</i>
+</div>
+<br><br>
+<div>
+Discrete and categorical responses arise in many modern spatial experiments, but most design methodologies focus on mean behaviour or binary classification. We propose Spatial Logistic Gaussian Processes (SLGPs) as general-purpose surrogates for spatially varying discrete distributions. The SLGP representation yields a full posterior on the probability mass function at any location, allowing principled uncertainty quantification and distribution-aware loss functions. We derive acquisition strategies that select new samples based on the current uncertainty.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Hainy'></a>
+<h2 style="margin-top:40px;">
+Hainy Markus
+</h2>
+<p>
+<strong>Johannes Kepler University Linz</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Sequential Bayesian Experimental Design for Prediction in Physical Experiments Informed by Computer Models</i>
+</div>
+<br><br>
+<div>
+In many scientific and engineering domains, physical experiments are often costly, non-replicable, or time-consuming. The Kennedy &amp; O’Hagan (KOH) model framework has become a widely used approach for combining simulator runs with limited experimental observations. Under a Bayesian implementation, the simulator output, model discrepancy, and observation noise are jointly modeled by coupled Gaussian processes, followed by coherent posterior inference and uncertainty quantification. This work presents a genuinely sequential Bayesian experimental design (BED) framework explicitly aimed at improving the predictive performance of the KOH model. We employ a mutual information (MI)–based criterion and develop a hybrid variant that integrates with measures of local model complexity, leading to significantly more efficient design decisions. We further theoretically establish asymptotic links between the MI-based criterion and the classical integrated mean squared prediction error (IMSPE) minimization criterion. In practice, we find the MI-based criterion is more comprehensive and robust than the IMSPE minimization criterion, especially when the model is highly uncertain in the early stages of the experiment. We demonstrate the effectiveness of the proposed methods through both a synthetic example and a real biochemical case study, and compare the MI- and IMSPE-based criteria against several other classical design criteria under sequential (offline) and adaptive (online) BED settings.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Hooker'></a>
+<h2 style="margin-top:40px;">
+Hooker Andrew
+</h2>
+<p>
+<strong>Uppsala University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimizing clinical study designs for CAR-T cell therapy: Development of an efficient sampling strategy through optimal experimental design</i>
+</div>
+<br><br>
+<div>
+Designing efficient studies for emerging therapies poses recurring challenges for optimal experimental design: uncertain prior parameter values, substantial between-subject variability, and practical constraints that preclude fixed sampling schedules. We developed a robust optimal design framework addressing these challenges and applied it to a clinical study of CAR-T cell therapy, a cancer immunotherapy with complex nonlinear dose-exposure and exposure-response dynamics. Building on a published mechanistic nonlinear mixed-effects model of CAR-T cell kinetics and tumor dynamics, we (1) determined the minimal population size required to identify model parameters, (2) compared alternative sampling strategies, and (3) derived flexible sampling windows in place of fixed timepoints, accounting for between-population variability and prior parameter uncertainty. The resulting design specified 60 patients, three fixed tumor-burden assessments (days 0, 30, 90), and three CAR-T cell sampling windows (days 2-4, 12-18, 32-47 post-infusion). In stochastic simulation and estimation, the windowed design outperformed fixed-timepoint designs, confirming its efficiency and robustness. The work illustrates how robust and flexible optimal design can deliver implementable schedules for complex nonlinear mixed-effects models in settings where rigid sampling is infeasible.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Jones'></a>
+<h2 style="margin-top:40px;">
+Jones Bradley
+</h2>
+<p>
+<strong>Retired</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Unrestricted Bridge (U-Bridge) Designs</i>
+</div>
+<br><br>
+<div>
+We propose a simple method to generate designs for continuous factors when the response data are noisy. Our “unrestricted bridge (U-Bridge) designs” are closely related to the bridge designs of Jones et. al., but are much easier to construct. U-Bridge designs provide a middle ground between optimal designs and traditional space-filling designs. They support fitting both polynomial models and more flexible models such as Gaussian process models. This allows for consideration of both variance and bias when the data are noisy.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Kang'></a>
+<h2 style="margin-top:40px;">
+Kang Lulu
+</h2>
+<p>
+<strong>University of Massachusetts Amherst</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Robust and Sparse Generalized Linear Models for High-Dimensional Data via Maximum Mean Discrepancy (DPP)</i>
+</div>
+<br><br>
+<div>
+High-dimensional datasets are frequently subject to contamination by outliers and heavy-tailed noise, which can severely bias standard regularized estimators like the Lasso. While Maximum Mean Discrepancy (MMD) has recently been introduced as a “universal” framework for robust regression, its application to high-dimensional Generalized Linear Models (GLMs) remains largely unexplored, particularly regarding variable selection. In this paper, we propose a penalized MMD framework for robust estimation and feature selection in GLMs. We introduce an l_1-penalized MMD objective and develop two versions of the estimator: a full O(n^2) version and a computationally efficient O(n) approximation. To solve the resulting non-convex optimization problem, we employ an algorithm based on the Alternating Direction Method of Multipliers (ADMM) combined with AdaGrad. Through extensive simulation studies involving Gaussian linear regression and binary logistic regression, we demonstrate that our proposed methods significantly outperform classical penalized GLMs and existing robust benchmarks. Our approach shows particular strength in handling high-leverage points and heavy-tailed error distributions, where traditional methods often fail.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Karvonen'></a>
+<h2 style="margin-top:40px;">
+Karvonen Toni
+</h2>
+<p>
+<strong>Lappeenranta–Lahti University of Technology LUT</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Good and bad kernels</i>
+</div>
+<br><br>
+<div>
+I discuss which covariance kernels one should use and which to avoid when constructing a design with a Gaussian random fields. If the kernel is real analytic (e.g., the Gaussian kernel), the MSE tends to zero as the number of design points increases regardless of where these points are placed. For such kernels it is difficult to distinguish a good design from a bad one. If the kernel is rougher, the design must be space-filling if the MSE is to tend to zero.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Koutra'></a>
+<h2 style="margin-top:40px;">
+Koutra Vasiliki
+</h2>
+<p>
+<strong>King’s College London</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Designing experiments on networks</i>
+</div>
+<br><br>
+<div>
+In many modern applications, experiments are conducted on units connected through a network structure, such as social, biological, or technological systems. In these settings, classical assumptions are violated because outcomes may be influenced not only by a unit’s own treatment, but also by treatments on connected units, leading to interference and spillover effects. In this talk, I will present recent work on experimental design in networked settings, aiming to make better use of the network structure to improve the estimation of treatment effects in large or complex systems. I will illustrate the approach through examples, highlighting improvements over standard methods and discussing some of the challenges.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Koval'></a>
+<h2 style="margin-top:40px;">
+Koval Karina
+</h2>
+<p>
+<strong>Heidelberg University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Measure transport for Bayesian optimal experimental design</i>
+</div>
+<br><br>
+<div>
+Bayesian optimal experimental design provides a framework for selecting informative experiments in inverse problems, but is often computationally challenging due to the need to approximate complex, high-dimensional posterior distributions. These challenges are particularly pronounced in problems governed by partial differential equations (PDEs), where the high cost of forward solves and the large-dimensional parameter spaces compound the computational burden. This talk explores how measure transport methods can help address these challenges. By constructing deterministic mappings between measures, transport methods enable efficient approximation of posteriors and related quantities arising in design objectives. In particular, such mappings can be reused across multiple data realizations, enabling amortized inference in Bayesian settings. We discuss how such approaches can be used to improve the scalability of experimental design in Bayesian inverse problems and illustrate their potential through several examples.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Lamberti'></a>
+<h2 style="margin-top:40px;">
+Lamberti Justin
+</h2>
+<p>
+<strong>TU Dortmund University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Designs for Large Time-Dependent Networks (DPP)</i>
+</div>
+<br><br>
+<div>
+We consider the problem of optimally allocating measurement devices in complex time-dependent networks so that precise state estimation of the network at a future time-point is possible. For that purpose, we formulate a linear random-effects model in which the network structure and time-dependence can be separated. We then focus on the problem of optimally allocating measurement devices of different precision by reformulating the discrete optimization problem as a continuous one. Using the A-optimality criterion, we formulate an optimality criterion for the optimal state estimation of the network at a future time-point and we provide an analytical solution of the corresponding A-optimal designs. However, calculating the <span class="math inline">\(A\)</span>-optimal design becomes computationally demanding when the network structure is large and complex. In this situation, the network has to be reduced before calculating the <span class="math inline">\(A\)</span>-optimal design. For that purpose, we propose two methods: one using the quotient graph and the other cutting the network into subgraphs that are then treated separately. We show in a simulation study that the designs based on the cutting approach perform well compared to the analytically determined designs in terms of A-efficiencies.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Lane'></a>
+<h2 style="margin-top:40px;">
+Lane Adam
+</h2>
+<p>
+<strong>Cincinnati Children’s Hospital</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Improving Efficiency with Relevant Subset Designs</i>
+</div>
+<br><br>
+<div>
+The majority of historical designs are fixed in nature, where fixed indicates a design is specified in advance of the experiment. The conventional wisdom is that the set of fixed designs is sufficient to produce efficient experiments. This work challenges this convention and shows how adaptation can improve the efficiency of an a priori design. Specifically, in the context of a sequential experiment, where observations are accrued in a series of runs, an adaptive design is proposed that is more efficient than the corresponding fixed design.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Leonov'></a>
+<h2 style="margin-top:40px;">
+Leonov Sergei
+</h2>
+<p>
+<strong>CSL Behring</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Integrating Bayesian and Promising Zone Approaches in a Phase 3 Clinical Trial (DPP)</i>
+</div>
+<br><br>
+<div>
+We describe a Phase 3 clinical trial design planned in a rare-disease population to compare a new treatment with a control. The primary efficacy endpoint is time to a predefined event within a fixed follow-up period. The design incorporates two interim analyses: the first is based on Bayesian posterior probabilities, while the second evaluates conditional power and applies a promising zone framework. We present results of simulations that explore the operating characteristics of the proposed design
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Malevich'></a>
+<h2 style="margin-top:40px;">
+Malevich Nadja
+</h2>
+<p>
+<strong>Universität Münster</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Paired Comparisons Designed for Personnel Recruiting (DPP)</i>
+</div>
+<br><br>
+<div>
+Paired comparison experiments are often used to obtain more reliable responses than single-stimulus evaluations. In contrast to standard paired comparisons of categorical factors, in the present setup, the explanatory variables are quantitative and their settings must be chosen from a highly constrained design region. Under these restrictions, optimal designs differ substantially from commonly used standard solutions. Based on the structure of the design region, we derive D- and A-optimal approximate designs that can be readily implemented in practice.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Marshall'></a>
+<h2 style="margin-top:40px;">
+Marshall Daniel
+</h2>
+<p>
+<strong>Brunel University of London</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Experimental Design on Networks: Exploring Nonlinear Social Influence</i>
+</div>
+<br><br>
+<div>
+Experiments on interconnected units, such as users in online social networks, pose distinctive challenges for both inference and design due to network interference and parameter‑dependent information structures. We study the POW-DEG nonlinear social influence model on a retweet network of X/Twitter users and evaluate how designs optimised under different criteria perform under both prior misspecification and network misspecification. The poster presents pairwise profile‑likelihood confidence regions for designs obtained under different optimality criteria and compares pseudo‑Bayesian and point‑prior approaches for the POW-DEG model. Our results show that explicitly optimising designs - rather than relying on randomised or balanced treatment allocations - improves efficiency in nonlinear networked experiments, even when assumptions about the network topology or parameter priors are incorrect.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='May'></a>
+<h2 style="margin-top:40px;">
+May Caterina
+</h2>
+<p>
+<strong>Universita’ del Piemonte Orientale</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal design of experiments for dynamic factors and functional responses</i>
+</div>
+<br><br>
+<div>
+We study the problem of optimal experimental designs for the estimation of a non-concurrent linear regression model where both the response and the factors are continuous functions. After obtaining the variance-covariance matrix of the estimator of the functional coefficient which minimizes the integrated sum of squared errors, we extend the definition of optimal design to this estimator, and we provide the expression of the A-optimal and of the D-optimal designs. In order to compute these optimal designs through a suitable algorithm, an experimenter should set in advance the choice of basis functions (e.g., type and dimension) to represent the predictors and to expand the functional coefficients in the direction of the predictors. As we show, the functional form of the optimal designs is affected by this choice. Simulations show that functional A–optimal designs provide substantial gains over naïve, discretization-based strategies by yielding more informative response trajectories and, hence, more accurate estimates of the coefficient surface.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Mojmir'></a>
+<h2 style="margin-top:40px;">
+Mojmir Mutny
+</h2>
+<p>
+<strong>ETH Zurich, Broad Institute</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Active Exploration via Experiment Design in Markov Chains</i>
+</div>
+<br><br>
+<div>
+Optimal Experiment Design is a classic field in statistics, closely related to Active Learning in Machine Learning. It assumes that through a series of system interactions, typically queries, we can estimate an unknown quantity. The goal is to develop an algorithmic strategy that optimally gathers information in a budget-constrained scenario. Traditionally, it is assumed that any query can be selected at any time or interaction round. However, in this talk, I will discuss more complex scenarios where interactions change the state of the experimenter, thereby restricting the possible queries. These state transitions are modeled using a Markov chain, and the overall process can be described as a Markov Decision Process (MDP) with a non-linear reward function. I will examine different problem such as exploration, preference learning and maximum identification with applications in spatial surveillance, personalization and chemical reactor optimization. Additionally, I will link this exposition to the optimal control literature.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Mller'></a>
+<h2 style="margin-top:40px;">
+Müller Christine H.
+</h2>
+<p>
+<strong>TU Dortmund</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal designs for the Kalman filter applied to electrical power distribution grids (DPP)</i>
+</div>
+<br><br>
+<div>
+We consider dynamic electrical power distribution grids where unknown voltage states are strongly time dependent. These unknown states are estimated via an extended Kalman filter based on power measurements at the nodes of the grid. The design problem is here to determine nodes of the grid where the measurements should be taken with high precision and where lower precision is possible. Since the covariance matrices of state estimation and state prediction are time dependent and are additionally of complicated form, we propose a simplified design criteria based on a simplified matrix. Although this matrix is still time dependent, it is much easier to treat and methods developed for other networks can be applied. We show this for a star network using the trace and the determinant. A simulation study demonstrates that optimal designs for these simplified criteria are also very good for minimizing the trace and the determinant of the covariance matrices of state estimation and state prediction. Besides a star network, this simulation treats also a network with series connection.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='MuozdelRo'></a>
+<h2 style="margin-top:40px;">
+Muñoz del Río Alba
+</h2>
+<p>
+<strong>Universidad a Distancia de Madrid</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Efficient Isothermal Experimental Designs for Parameter Estimation in Predictive Microbiology</i>
+</div>
+<br><br>
+<div>
+Predictive microbiology relies on mathematical models to describe microbial growth under controlled environmental conditions and to support food-safety decision-making. A common experimental strategy consists of performing several isothermal experiments, fitting a primary growth model at each temperature, and then using the estimated maximum growth rates as input data for a secondary temperature-dependent model. Although widely used, this two-step procedure may overlook the uncertainty associated with the intermediate estimates, which can affect the precision of the final model predictions. In this work, Optimal Experimental Design is used to improve the planning of isothermal growth experiments for parameter estimation in predictive microbiology. The Baranyi model is considered as the primary model and the Ratkowsky square-root model as the secondary model, using as case study the growth of Pseudomonas spp. on button mushrooms. Several experimental scenarios are analysed: fixed-temperature designs for estimating the primary model parameters, c-optimal designs focused on the maximum growth rate, and joint designs in which both temperature and time are treated as controllable variables. The results show that standard isothermal designs may lead to a relevant loss of efficiency compared with optimal designs. In particular, D-optimal designs improve the joint estimation of primary model parameters, while c-optimal designs substantially reduce the uncertainty associated with the estimation of the maximum growth rate. Moreover, designing jointly over temperature and time provides a more efficient strategy for estimating both primary and secondary model parameters, reducing the number of required points of observations and allowing relevant savings in experimental duration with only minor losses in efficiency.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Overstall'></a>
+<h2 style="margin-top:40px;">
+Overstall Antony
+</h2>
+<p>
+<strong>University of Southampton, UK</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>General Bayesian optimal design of experiments</i>
+</div>
+<br><br>
+<div>
+Bayesian optimal design is a well-established approach to planning experiments. A distribution for the responses, i.e. a statistical model, is assumed which is dependent on unknown parameters. A utility function is then specified giving gain in information in estimating the true values of the parameters, using the Bayesian posterior distribution. A Bayesian optimal design is given by maximising expectation of the utility with respect to the distribution implied by statistical model and prior distribution for the true parameter values. The approach accounts for the experimental aim, via specification of the utility, and of assumed sources of uncertainty. However, it is predicated on the statistical model being correct. Recently, a new type of statistical inference, known as General Bayesian inference, has been proposed. This is Bayesian-like, i.e. uncertainty for unknown quantities is represented by a posterior distribution, but does not necessarily require specification of a statistical model. The resulting inference is less sensitive to misspecification of the statistical model. This talk introduces General Bayesian optimal design: a framework for optimal design of experiments under General Bayesian inference. A computational approach to find designs in practice is outlined and the framework is demonstrated on exemplars including linear models, and experiments with count and time-to-event responses.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Parker'></a>
+<h2 style="margin-top:40px;">
+Parker Ben
+</h2>
+<p>
+<strong>Brunel, University of London</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Design of Experiments on Networks for Autoregressive Models (DPP)</i>
+</div>
+<br><br>
+<div>
+We investigate how to design experiments under an autoregressive model, where the response of an experimental is affected by the response of others that it is connected to, according to an autoregressive parameter as well as the strength of connections between the experimental units, specified by a known adjacency matrix. We derive the Fisher information for this model, and as the optimal design depends on the unknown parameters, we present (pseudo-)Bayesian optimal designs for point priors (locally optimal designs) and simple priors. We extend the model to include blocking, and indirect treatment effects, and present optimal designs for a wide range of models useful on experiments on networks, including spatial models. We give examples in crop experiments, marketing experiments on social networks, crossover trials, and spatial experiments, but the ideas and methods can readily be generalised to many designed experiments on networks.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Patan'></a>
+<h2 style="margin-top:40px;">
+Patan Maciej
+</h2>
+<p>
+<strong>University of Zielona Góra</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Maximin efficient sensor location for estimation of subsets of parameters</i>
+</div>
+<br><br>
+<div>
+Optimal sensor location for parameter estimation of spatiotemporal systems is usually focused on maximizing an optimality criterion defined on the Fisher information matrix (FIM) associated with the estimated parameters. But different optimality criteria may yield different optimal locations. Therefore, strong interest is generated by compromise locations which would produce decent values for a broadest possible class of design criteria. Here a method is proposed to compute sensor locations which maximize the minimal efficiency with respect to the class of orthogonally invariant information criteria. This class is broad enough to include all optimum design criteria encountered in practice. It turns out that the minimal efficiency with respect to this class equals that with respect to a finite set of criteria generalizing the well-known E-optimum design criterion. A major contribution of the approach proposed here is the focus on estimating only a subset of parameters as accurately as possible. The other parameters, called nuisance parameters, must also be estimated although we are interested in neither their values, nor accuracies. In order to make selection of a best subset of gauged sites from a possibly very large set of candidate sites computationally tractable, its convex relaxation is introduced. Two major problems to be tackled are the potential singularity of the optimal information matrix associated with all unknown parameters and the nondifferentiability of the optimality criterion. The former is settled by imposing a constraint on the minimal allowable value of the determinant of the information matrix. The latter is resolved by reformulating the problem as a convex semi-infinite programming problem whose solution is sought by solving a sequence of finite low-dimensional min-max problems using extremely efficient generalized simplicial decomposition. The excellent performance of the proposed technique is illustrated by an example involving optimal sensor-node acitation problem for a process described by a system of partial differential equations.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Pronzato2'></a>
+<h2 style="margin-top:40px;">
+Pronzato Luc
+</h2>
+<p>
+<strong>CNRS</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Random and Quasi-Random Designs for Quantisation in High Dimension</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Pronzato.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Prus'></a>
+<h2 style="margin-top:40px;">
+Prus Maryna
+</h2>
+<p>
+<strong>University of Hohenheim, Germany</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Design for Multi-Environment Crop Variety Testing</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Prus.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Reckermann'></a>
+<h2 style="margin-top:40px;">
+Reckermann Katharina
+</h2>
+<p>
+<strong>Roche</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Design of Experiments (DoE) in Pharmaceutical Technical Development</i>
+</div>
+<br><br>
+<div>
+Design of Experiments (DoE) has become an indispensable, systematic framework in pharmaceutical technical development for efficiently navigating complex, multivariable systems. In process development, DoE is utilized to identify critical process parameters (CPPs) to optimize yield and product quality, while simultaneously establishing a robust design space resilient to inherent manufacturing variability. Furthermore, applying DoE to analytical development ensures the optimization of method accuracy and precision.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Riccomagno2'></a>
+<h2 style="margin-top:40px;">
+Riccomagno Eva
+</h2>
+<p>
+<strong>University of Genova</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Data-Driven Strategies for Detecting and Sampling Misrepresented Subgroups (DPP)</i>
+</div>
+<br><br>
+<div>
+Economic policy research often investigates population well-being, with particular attention to the links between unequal living conditions, low education, and social exclusion. Sample surveys such as European Union Statistics on Income and Living Conditions (EU-SILC) are widely used for this purpose and inform public policy, yet their sampling designs may fail to adequately represent rare, hard-to-sample, or under-covered subgroups. We propose a generalisable data-driven integrated workflow to detect outliers in survey data that may signal under-represented subgroups. Identified groups can then be characterised to inform targeted resampling strategies that improve survey inclusiveness. An empirical application using the 2019 EU-SILC data for the Italian region of Liguria shows that citizenship, material deprivation, large household size, and economic vulnerability are indicators of under-representation.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='RodriguezDiaz'></a>
+<h2 style="margin-top:40px;">
+Rodriguez Diaz Juan M.
+</h2>
+<p>
+<strong>University of Salamanca</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal designs for drug detection in the human body and further applications</i>
+</div>
+<br><br>
+<div>
+A review study of models for detecting the presence and evaluating the amount of different kinds of drugs in the human body will be performed from the perspective of designing the best experimental framework for estimating model parameters. Usually derived from the compartmental-model approach some variations, such as scenarios involving several incorporations at different times, will be analyzed and compared with existing bibliography. New models for single and multiple intake scenarios will be introduced; in the case of alcohol consumption, these may be justified according to the actual behavior of the incorporation and elimination phases of this substance in humans. Optimal and quasi-optimal designs will be proposed. Finally, a procedure for estimating the quantity of alcohol in an individual at a past time, based on one or more observations taken at the present, will be proposed and discussed using these models. In cases where the estimation could lead to a punitive situation for the subject, a conservative procedure for deciding whether or not the individual should be penalized will be proposed, always aiming for a balance between the need to monitor alcohol consumption (for instance, when driving) and the presumption of innocence.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Ronco'></a>
+<h2 style="margin-top:40px;">
+Ronco Davide
+</h2>
+<p>
+<strong>Politecnico di Torino</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>How Deep Learning can support the Steel wheel design: a practical case study</i>
+</div>
+<br><br>
+<div>
+In the automotive industry, vehicle wheels play a crucial role in ensuring overall vehicle safety. A failure or an inadequate wheel design can compromise not only the vehicle’s stability and handling, but also the safety of its occupants, potentially leading to severe consequences. One of the key aspects in wheel design is fatigue strength, namely the ability of the wheel to withstand repeated cyclic loads without developing damage. Ensuring adequate fatigue resistance is essential to guarantee that the wheel maintains its safety performance throughout the entire service life of the vehicle. However, wheel design is not limited to safety requirements alone. Automotive manufacturers also impose a wide range of additional constraints that must be satisfied, such as weight reduction, vehicle handling performance, compatibility with braking systems, wheel covers and valves, aesthetic appearance, and, increasingly important, environmental sustainability, including the reduction of CO₂ emissions throughout the product life cycle. As a result, wheel design becomes a complex optimization process in which multiple competing factors must be carefully balanced. In many cases, achieving the optimal solution requires a large number of design iterations, often exceeding fifty. Each iteration is typically supported by advanced structural analyses based on the Finite Element Method (FEM), making the overall optimization process computationally intensive and potentially requiring several weeks to complete. The objective of this work is to accelerate this development process by drastically reducing design times and enabling optimal solutions to be achieved within minutes through the application of Deep Learning technologies. The proposed methodology aims to optimize the wheel design process by leveraging the capabilities of neural networks and Deep Learning techniques to significantly reduce computational time while maintaining a good level of accuracy and guiding designers toward the most promising design direction. The approach is structured into two main phases: the training phase and the validation phase. 1. Training phase The first phase involves training a neural network using data obtained from FEM structural analyses. In this stage, the wheel dimensional parameters (namely the geometrical dimensions defining the wheel shape) are used as input variables for the neural network. The outputs consist of the stress results in the most critical areas obtained from the FEM simulations to which the wheel is subjected, the wight and the raw material needed for its construction. During the training process, the model learns the complex relationships between the geometric parameters and the mechanical responses (stress distributions) of the wheel by processing large amounts of data. This learning process enables the neural network to develop an understanding of the wheel’s structural behavior, allowing it to generate reliable predictions without the need to perform the numerous iterative FEM calculations traditionally required during the design process. 2. Validation Phase Once trained, the neural network is tested and validated through a verification process in which the predicted results are compared with those obtained using traditional FEM methods. The outputs generated by the neural network are evaluated to assess their consistency and reliability with respect to the FEM data, showing a strong correlation between the two approaches. A major advantage of the proposed methodology is that, once the model has been trained, it is capable of generating predictions within minutes rather than requiring weeks to complete FEM iterations across dozens or even hundreds of design configurations. The neural network can rapidly explore the design space by generating and evaluating tens of thousands of input–output combinations in a very short time. This enables a far more efficient search for the optimal solution, allowing the design team to focus on more creative and innovative aspects of the development process instead of repetitive computational iterations. The present work is not limited to the description of the proposed methodology, but also includes exploratory results that demonstrate the effectiveness of the developed model. In particular, a practical case study is presented in which the neural network is used to explore different wheel geometric configurations while simultaneously optimizing structural performance and reducing computational time. The speed and reliability offered by Deep Learning therefore not only accelerate the design process, but also provide a significant competitive advantage. The ability to rapidly evaluate multiple design configurations and identify optimal solutions much more efficiently than traditional approaches enables companies to respond more quickly to market demands and reduce the time-to-market of the final product.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Rosa'></a>
+<h2 style="margin-top:40px;">
+Rosa Samuel
+</h2>
+<p>
+<strong>Comenius University Bratislava</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Removing nonoptimal points for D-optimal exact designs</i>
+</div>
+<br><br>
+<div>
+One of the most common problems in optimal design of experiments is computing D-optimal exact designs for a large finite design space. In this talk, which is based on [Harman, Rosa (2026): “Removal of redundant candidate points for the exact D-optimal design problem”, Statistics and Computing], we give necessary conditions that must be satisfied by any support point of a D-optimal exact design. These conditions enable rapid elimination of redundant candidate points without loss of optimality, thereby reducing memory requirements and runtime of subsequent exact-design algorithms. We also prove that, for a sufficiently large number of trials, the support of every D-optimal exact design is contained in a set that typically coincides with the support of a D-optimal approximate design. We demonstrate the approach on problems with candidate sets of up to 100 million points. The proposed approach reduced the initial candidate sets by several orders of magnitude, thereby making it possible to compute D-optimal exact designs for these problems via mixed-integer second-order cone programming.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Rosenberger'></a>
+<h2 style="margin-top:40px;">
+Rosenberger William
+</h2>
+<p>
+<strong>George Mason University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>A Framework for Two-Stage Enrichment Trial Designs (DPP)</i>
+</div>
+<br><br>
+<div>
+We develop a framework for a two-stage enrichment design to investigate a treatment effect in a clinical trial. A learning stage identifies a potentially benefitting subgroup, and that information is carried forward to a confirmatory stage with adapted enrollment criteria. Final inference combines data from both stages, and subgroup performance is evaluated using false inclusion and false exclusion rates. In stage 1, to estimate a benefitting subgroup, we propose a nonparametric regression level-set approach that relaxes monotonicity assumptions among continuous biomarkers and the treatment effect. The resulting optimal subgroup is designed to balance statistical validity with ethical considerations in patient enrollment. We describe potential methods to conduct the second stage and relevant inference, topics that should be considered research in progress.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Roth'></a>
+<h2 style="margin-top:40px;">
+Roth Katrin
+</h2>
+<p>
+<strong>Bayer AG</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Design challenges for dose-finding studies in drug development - Part 1: Estimands and Intercurrent Events</i>
+</div>
+<br><br>
+<div>
+Dose-finding studies play a critical role in drug development, aiming to identify doses that provide an optimal balance between efficacy and safety. While substantial methodological progress has been made over the past decades, recent developments in regulatory guidance and increasing therapeutic complexity introduce new challenges for the design of such studies. In this first part of this presentation, we discuss challenges arising from the implementation of the estimands framework, with a particular focus on intercurrent events. Intercurrent events such as treatment discontinuation, use of rescue medication, or dose modifications are common in dose-finding studies and can fundamentally affect the interpretation of dose–response relationships. We illustrate how different strategies for handling intercurrent events translate into different estimands and how these choices impact optimal design considerations and modeling assumptions. The implications for commonly used dose-finding approaches are discussed, highlighting potential mismatches between design objectives and the targeted estimand. Overall, this presentation aims to raise awareness of some challenges in applying optimal design theory in pharmaceutical dose-finding studies.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='SadaAllo'></a>
+<h2 style="margin-top:40px;">
+Sada Allo Maider
+</h2>
+<p>
+<strong>Universidad Pública de Navarra</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Joint Estimation of Target Dose and Slope in Binary Response Models: A Geometric Approach (DPP)</i>
+</div>
+<br><br>
+<div>
+A common goal in many fields is to identify the level of a stimulus (dose) that has a prescribed percentage of positive binary responses. We also consider the estimation of the slope of the response function at the dose of interest to calibrate the importance of error in the dose estimate. We use a parameterization whose information matrix depends directly on the parameters of interest. By mapping the problem to an induced dose space, the optimization process becomes independent of the unknown parameters. This dependency, however, is reintroduced when transforming the optimal doses from the induced space back into the real dose space. Unfortunately, the symmetrical properties that appear in the geometrical reasoning of previous works no longer hold. In contrast, the geometry presented here provides a mechanistic understanding that overcomes that of two-dimensional graphic methods. For example, one can explicitly observe how designs are constructed from convex combinations of elementary designs, revealing the specific contribution of each dose to the total information and providing a comprehensive view of the matrices of all possible designs. For a wide class of optimality criteria and response models, we find that the optimal design for the joint estimation of the dose and the slope is a two-point design symmetric about the median. This discovery reduces the computational complexity from a five-parameter to a single-parameter problem as we show for finding the standardized A- and cc-optimal designs.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Schmelter'></a>
+<h2 style="margin-top:40px;">
+Schmelter Thomas
+</h2>
+<p>
+<strong>Bayer AG</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Design challenges for dose-finding studies in drug development - Part 2: Finding more than the right dose</i>
+</div>
+<br><br>
+<div>
+Dose-finding studies play a critical role in drug development, aiming to identify doses that provide an optimal balance between efficacy and safety. While substantial methodological progress has been made over the past decades, recent developments in regulatory guidance and increasing therapeutic complexity introduce new challenges for the design of such studies. This second part of the presentation addresses emerging challenges when the objective of a dose-finding study extends beyond identifying a single dose to selecting an appropriate treatment regimen. This is, e.g., the case in settings with titration schemes or flexible regimens adapting to patient response or in settings where also interval an optimal interval between treatment applications needs to be identified. We discuss how this added complexity affects both design and analysis, and the increased dimensionality of the design space. Methodological and practical considerations are illustrated using motivating examples. Overall, this presentation aims to raise awareness of some challenges in applying optimal design theory in pharmaceutical dose-finding studies.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Schorning'></a>
+<h2 style="margin-top:40px;">
+Schorning Kirsten
+</h2>
+<p>
+<strong>TU Dortmund University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Designs for Drug Combination Studies</i>
+</div>
+<br><br>
+<div>
+In toxicology, drug combination studies become increasingly important as they investigate potential interaction effects rather than the individual impacts of toxic substances. We first investigate potential interactions between two different toxic substances. In particular, we define an extension of effective doses to the bivariate case. Using nonlinear surface models to describe the dose-dose-response relationship, this definition yields the concept of effective dose combinations, which are contour lines of the fitted surface. We then propose an optimality criterion that aims to estimate these effective dose combinations precisely. In particular, an optimal design minimizes the width of the confidence band of the contour lines of interest. Optimal design theory is developed for this problem, including equivalence theorems and efficiency bounds. The performance of the optimal design is illustrated through examples that model dose-combination data using various nonlinear surface models. It is demonstrated that the optimal design for identifying effective dose combinations yields a more precise estimation of the effective dose combinations than the classical ray or factorial designs. Finally, we present different approaches to extend the results to combination studies involving a large number of toxic substances.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Singh'></a>
+<h2 style="margin-top:40px;">
+Singh Arpan
+</h2>
+<p>
+<strong>CTRU, University of Leeds</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Non-Orthogonal Factorial Designs for Trials of Therapist-Delivered Interventions: Allowing for Therapist Capacity, Availability and Turnover</i>
+</div>
+<br><br>
+<div>
+Disentangling therapist effects from intervention effects has long been considered a challenge in randomised trials of therapist-delivered interventions. When separating these effects is of interest, factorial designs have been proposed in which therapists and interventions are regarded as two potentially interacting components of a complex intervention, represented by two treatment factors (one random, one fixed). In these trial designs, each therapist delivers each intervention (therapists and interventions are crossed), and the resulting therapist-intervention combinations are randomised to patients. It is assumed that each therapist is allocated the same number of patients (equal capacity), that all therapists within a centre are available at the point of randomisation (equal availability), and that therapists remain for the duration of the trial (no turnover). In practice, these are strong assumptions that if enforced may lead to delayed or suspended randomisation, prolonged recruitment and increased trial costs. We propose a set of novel randomisation strategies that explicitly account for therapist capacity, availability, and attrition while maintaining desirable statistical properties. Using extensive simulation studies, we compare the proposed and existing methods across a wide range of realistic trial scenarios, assessing trade‑offs between recruitment efficiency and statistical performance. The resulting guidance provides a practical framework for trialists designing trials of therapist-delivered interventions under real‑world constraints.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Solinus'></a>
+<h2 style="margin-top:40px;">
+Solinus Robin
+</h2>
+<p>
+<strong>Ruhr-Universität Bochum</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Design for Spatio-Temporal Stochastic Processes</i>
+</div>
+<br><br>
+<div>
+Spatially and temporally varying data can often be understood as a realisation of a spatio-temporal stochastic process to take the dependence structure into account. This general point of view includes different models as special cases. The common problem is to choose an optimal spatio-temporal product design, meaning that one measures at each location at all chosen time points. A natural approach is to globally minimise the mean squared prediction error (MSPE) of the best linear predictor, where the latter only depends on the mean and covariance structure of the process and the measurement error. We discuss two ways to achieve this, first by minimising the integrated MSPE and second by minimising the maximum MSPE, which in other words optimises the worst case. Naturally, this is more complicated when the process’s mean and covariance function are unknown. In this case, a parametric model is assumed and different approaches to consider for the uncertainty introduced by the parameter estimation are discussed.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Somogyi'></a>
+<h2 style="margin-top:40px;">
+Somogyi Pál
+</h2>
+<p>
+<strong>Department of Applied Mathematics and Statistics, Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Computing optimal designs of experiments for multivariate-response models</i>
+</div>
+<br><br>
+<div>
+Despite the increasing prevalence of vector observations, computation of optimal experimental design for multi-response models has received limited attention. To address this problem within the framework of approximate designs, we introduce mREX (Metrika 89:2, 217:242, 2025), an algorithm that generalizes the randomized exchange algorithm REX (J Am Stat Assoc 115:529, 348-361, 2020), originally specialized for single-response models. The mREX algorithm incorporates several improvements: a novel method for computing efficient sparse initial designs, an extension to all differentiable Kiefer’s optimality criteria, and an efficient method for performing optimal exchanges of weights. For the most commonly used D-optimality criterion, we propose a technique for optimal weight exchanges based on the characteristic polynomial of a matrix. The mREX algorithm typically converges to optimal designs faster than available alternative methods, although it does not require advanced mathematical programming solvers.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Spangl'></a>
+<h2 style="margin-top:40px;">
+Spangl Bernhard
+</h2>
+<p>
+<strong>BOKU University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Stratified sampling optimum allocation for fixed precision</i>
+</div>
+<br><br>
+<div>
+In stratified sampling, the optimal sample size allocation for fixed total sample size is determined by the Neyman-Tschuprov allocation formula. We derive a “reversed Neyman-Tschuprov formula” to determine the optimal sample size allocation for fixed precision. The motivation is applications in which the total sample size is not specified but the desired precision is. This presentation is based on a joint ongoing work with Norbert Kaiblinger.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Stadler'></a>
+<h2 style="margin-top:40px;">
+Stadler Alexandra
+</h2>
+<p>
+<strong>Johannes Kepler University Linz</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Improving AI Explainability through Design of Experiments</i>
+</div>
+<br><br>
+<div>
+In artificial intelligence (AI), the complexity of many models and processes surpasses human understanding, making it challenging to determine why a specific prediction is made. This lack of transparency is particularly problematic in critical fields like healthcare, where trust in a model’s predictions is paramount. As a result, the explainability of machine learning (ML) and other complex models has become a key area of focus. Efforts to improve model explainability often involve experimenting with AI systems and approximating their behavior through interpretable surrogate mechanisms. However, these procedures can be resource-intensive. Optimal design of experiments, which seeks to maximize the information obtained from a limited number of observations, offers promising methods for improving the efficiency of these explainability techniques. To demonstrate this potential, we explore Local Interpretable Model-agnostic Explanations (LIME), a widely used method introduced by Ribeiro et al. (2016). LIME provides explanations by generating new data points near the instance of interest and passing them through the model. While effective, this process can be computationally expensive, especially when predictions are costly or require many samples. LIME is highly versatile and can be applied to a wide range of models and datasets. In this work, we focus on models involving tabular data, regression tasks, and linear models as interpretable local approximations. By utilizing optimal design of experiments’ techniques, we reduce the number of function evaluations of the complex model, thereby reducing the computational effort of LIME by a significant amount. We consider this modified version of LIME to be energy-efficient, and thus preferable.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Stallrich'></a>
+<h2 style="margin-top:40px;">
+Stallrich Jonathan
+</h2>
+<p>
+<strong>North Carolina State University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>An Optimal Design Framework for Lasso Sign Recovery</i>
+</div>
+<br><br>
+<div>
+Supersaturated designs investigate more factors than there are runs, and are often constructed under a criterion measuring a design’s proximity to an unattainable orthogonal design. The most popular analysis identifies active factors by inspecting the solution path of a penalized estimator, such as the lasso. Recent criteria encouraging positive correlations between factors have been shown to produce designs with more definitive solution paths so long as the active factors have positive effects. Two open problems affecting the understanding and practicality of supersaturated designs are: (1) do optimal designs under existing criteria maximize support recovery probability across an estimator’s solution path, and (2) why do designs with positively correlated columns produce more definitive solution paths when the active factors have positive sign effects? To answer these questions, we develop criteria maximizing the lasso’s sign recovery probability. We prove that an orthogonal design is an ideal structure when the signs of the active factors are unknown, and a design constant small, positive correlations is ideal when the signs are assumed known. A computationally-efficient design search algorithm is proposed that first filters through optimal designs under new heuristic criteria to select the one that maximizes the lasso sign recovery probability.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Strouwen'></a>
+<h2 style="margin-top:40px;">
+Strouwen Arno
+</h2>
+<p>
+<strong>Strouwen Statistics/PumasAI/KULeuven</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>From Optimal Designs to Optimal Policies</i>
+</div>
+<br><br>
+<div>
+At mODa13, several speakers argued that adaptive experimental design should be framed as learning a policy rather than solving a sequence of static optimization problems. In the years since, the machine learning community has made rapid progress on exactly this vision. Deep Adaptive Design, normalizing flows, variational approaches to expected information gain, amortized inference networks, and diffusion-based posterior estimators now enable fully adaptive Bayesian experimental design in real time. This talk surveys these developments and connects them to concepts familiar to the mODa community. We illustrate these ideas through applications to nonlinear dynamical systems, building on our earlier mODa contributions on optimal experimental design for parameter estimation in biological systems. We show how amortized policy-based design can be combined with mechanistic ODE models to tackle design under model uncertainty, and discuss how model discrimination techniques can guide the identification of unknown model components.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Stufken'></a>
+<h2 style="margin-top:40px;">
+Stufken John
+</h2>
+<p>
+<strong>George Mason University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Data subsampling strategies</i>
+</div>
+<br><br>
+<div>
+Subsampling from large datasets has attracted growing attention over the past decade, leading to the development of a wide range of methods. After a brief high-level overview, this presentation will examine two representative approaches in greater detail: one model-based and one model-free. The model-based method is designed to achieve efficient estimation of model parameters, whereas the model-free approach emphasizes accurate prediction of future observations.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Suzuki'></a>
+<h2 style="margin-top:40px;">
+Suzuki Yuya
+</h2>
+<p>
+<strong>Aalto University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Approximation of differential entropy in Bayesian optimal experimental design</i>
+</div>
+<br><br>
+<div>
+<a href='pdfabstracts/Suzuki.pdf'>Click here for abstract</a>
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Sverdlov'></a>
+<h2 style="margin-top:40px;">
+Sverdlov Alex
+</h2>
+<p>
+<strong>Novartis</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Optimal Experimental Designs for Wiener Process Models in Clinical Research Studies (DPP)</i>
+</div>
+<br><br>
+<div>
+We consider disease progression models formulated as Wiener processes and develop new approaches for optimizing design of clinical studies that employ such models. We focus on a model that jointly characterizes the mean drift, within- process variance, and between-subject (population) variance. Covariate effects on these parameters are modeled through a generalized regression framework, yield- ing a flexible class of parametric models. Within this framework, various optimal design problems can be formulated and solved using established theoretical tools. The proposed methodology is illustrated through optimal design problems motivated by randomized controlled trials for disease-modifying therapies.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Tarima'></a>
+<h2 style="margin-top:40px;">
+Tarima Sergey
+</h2>
+<p>
+<strong>University of Kentucky</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>The effect of informative adaptation on properties of Bayes estimators</i>
+</div>
+<br><br>
+<div>
+(joint work with Nancy Flournoy) This work formalizes the concept of “channeled dependence” for sequential sampling that was introduced by Flournoy and Tarima (2023). A posterior density only depends on the interim decision (e.g., a dose change or a stopping decision) though induced random sample sizes, while the impact of the interim decision rule on the distribution of the observable random variable is not fully captured by the interim decision. To address the invariance of the posterior to the interim decision rule, we consider a channeled posterior, which uses the conditional-on-interim-decision density while the traditional posterior uses the unconditional density. Compared to the traditional posterior mean, the mean the channeled posterior mean showed smaller mean squared error (MSE) integrated over the prior density across the majority of Monte-Carlo simulation studies. The performance of post-testing estimators is also compared using frequentist and Bayes MSEs.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Vazquez'></a>
+<h2 style="margin-top:40px;">
+Vazquez Alan
+</h2>
+<p>
+<strong>Tecnologico de Monterrey</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Can Large Language Models Generate Two-Level Fractional Factorial Designs?</i>
+</div>
+<br><br>
+<div>
+Two-level fractional factorial designs permit the study of multiple factors using a limited number of runs. Traditionally, these designs are obtained from catalogs available in standard textbooks or statistical software. However, modern Large Language Models (LLMs) can now produce two-level fractional factorial designs, but the quality of these designs has not been previously assessed. In this presentation, we evaluate two popular classes of LLMs, namely GPT and Gemini models, to construct two-level fractional factorial designs of various sizes. To this end, we use prompting techniques to develop a high-quality set of design construction tasks for the LLMs. We compare the designs obtained by the LLMs with the optimal designs and provide recommendations.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Wang1'></a>
+<h2 style="margin-top:40px;">
+Wang HaiYing
+</h2>
+<p>
+<strong>University of Connecticut</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Antithetic Designs and Stratification for Subsampling</i>
+</div>
+<br><br>
+<div>
+Massive datasets present both opportunities and challenges for statistical estimation, with subsampling emerging as an effective strategy to balance statistical efficiency against computational cost. Existing approaches typically draw independent or conditionally independent subsamples, focusing on selecting individually informative observations. We propose an antithetic subsampling framework that intentionally induces negative dependence among sampled observations to reduce the variance of the resulting estimator. Our method selects groups of observations with designed negative correlations, yielding improved estimation efficiency relative to independent subsampling. Additionally, we will present a Maximum-Variance-Reduction Stratification (MVRS) method that partitions the data to reduce the variance of subsampling estimators. MVRS incurs only a linear additional computational cost and can be seamlessly combined with existing random subsampling designs to further boost efficiency.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='WANG3'></a>
+<h2 style="margin-top:40px;">
+WANG Yaping
+</h2>
+<p>
+<strong>East China Normal University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Uniform projection designs under the stratified L2-discrepancy (DPP)</i>
+</div>
+<br><br>
+<div>
+This paper studies a uniform projection criterion for space-filling designs under the stratified L2-discrepancy. The criterion, denoted by <span class="math inline">\(Phi_{SD}\)</span>, is the average squared stratified L2-discrepancy over all two-dimensional projections. For Utype (n,m,sp) designs, we derive an explicit formula for <span class="math inline">\(Phi_{SD}\)</span> in terms of row-pairwise weighted hierarchical distances, and we establish sharp lower and upper bounds with equality conditions. We further show that many known optimal constructions attain the lower bound of ΦSD, and that designs attaining the lower bound of the full stratified L2-discrepancy also attain the lower bound of <span class="math inline">\(Phi_{SD}\)</span>. The criterion can be evaluated in O(<span class="math inline">\(n^2m\)</span>) time, with a modest reduction in arithmetic operations compared with direct projection-wise evaluation. Numerical studies illustrate the theoretical results and show that <span class="math inline">\(Phi_{SD}\)</span> is effective for assessing low-dimensional projection uniformity.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Xiao'></a>
+<h2 style="margin-top:40px;">
+Xiao Qian
+</h2>
+<p>
+<strong>Shanghai Jiao Tong University</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Batch-Sequential Maximum One-Factor-At-A-Time Designs</i>
+</div>
+<br><br>
+<div>
+Accurate prediction of satellite trajectories in low Earth orbit requires reliable quantification of atmospheric drag, yet high-fidelity drag simulators are too computationally expensive for routine large-scale uncertainty quantification. In the GRACE satellite-drag application considered here, each simulator run is costly, and reliable screening of physical inputs is needed before constructing surrogate models or performing broader uncertainty propagation. This case study exposes a practical limitation of the original Maximum One-Factor-At-A-Time (MOFAT) design: although MOFAT is economical for one-shot factor screening, it does not provide a principled way to augment the design sequentially when the initial run budget is insufficient. We address this problem by developing two batch-sequential extensions of MOFAT: the Interpolation MOFAT (I-MOFAT) and Sliced MOFAT (S-MOFAT) designs. Both preserve the structure required for estimating total Sobol’ indices while allowing the design to grow in stages. I-MOFAT supports local refinement through intermediate levels, whereas S-MOFAT promotes broader exploration through a sliced construction. Numerical studies and the GRACE case study show that these designs identify influential inputs more reliably than competing screening methods under constrained computational budgets.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Yang'></a>
+<h2 style="margin-top:40px;">
+Yang Min
+</h2>
+<p>
+<strong>University of Illinois at Chicago</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Subdata Selection for Measurement-Constrained Linear Regression under Model Misspecification</i>
+</div>
+<br><br>
+<div>
+In many modern applications, obtaining response variables is costly, time-consuming, or technically challenging, making it impractical to measure outcomes for all available units. In such settings, covariates may be available for a large pool of candidates, but responses can only be collected for a small, carefully selected subset, making the choice of which units to measure a consequential decision. Most existing subsampling methods are developed for massive datasets, emphasizing the trade-off between statistical accuracy and computational cost, and typically relying on the assumption of a correctly specified model. These features limit their suitability in measurement-constrained settings, where statistical efficiency is paramount and model misspecification is often unavoidable. To address these challenges, we develop a new subset selection framework for linear regression that accommodates potential model misspecification. The proposed approach targets predictive expected loss and yields an <span class="math inline">\(A\)</span>-optimality–type criterion that depends only on covariate information, requiring no response observations at the selection stage. We refer to this method as Expected Loss Optimal Selection (ELOS). By focusing on predictive risk rather than model-based optimality, ELOS remains well-defined and robust under misspecification. Simulation studies and real data applications demonstrate that ELOS achieves strong predictive performance and compares favorably with existing methods across a range of scenarios.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Youssef2'></a>
+<h2 style="margin-top:40px;">
+Youssef Noha
+</h2>
+<p>
+<strong>The American University in Cairo</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Maximum Entropy Sequential Design with ML-II, INLA, and MCMC Updating: A Comparative Study (DPP)</i>
+</div>
+<br><br>
+<div>
+This paper investigates maximum entropy sequential design for deterministic computer experiments using Gaussian process surrogates under a fixed simulation budget. We compare three hyperparameter updating strategies within a common entropy-driven framework: (i) Type-II maximum likelihood (ML-II/empirical Bayes), (ii) INLA-based approximate Bayesian updating, and (iii) MAP with full Bayesian propagation via MCMC. Performance is evaluated using pointwise root mean squared error (RMSE), posterior predictive RMSE, integrated posterior variance (IV), an entropy proxy, and computational cost across benchmarks of increasing dimensionality, including the one-dimensional Forrester function, the two-dimensional Branin function, a three-dimensional nonlinear simulator, and the six-dimensional Hartmann function. Across all settings, ML-II and MAP+FullBayes achieve comparable predictive accuracy, while differences in uncertainty quantification are more pronounced. ML-II contracts predictive uncertainty more aggressively, whereas MAP+FullBayes maintains more conservative uncertainty estimates due to integration over hyperparameters. INLA exhibits higher computational cost, and its uncertainty behavior is configuration-dependent: it retains larger uncertainty in one- and two-dimensional settings but contracts uncertainty most aggressively in the three-dimensional case, suggesting that its behavior is not uniformly conservative across benchmarks. These results demonstrate that entropy-based sampling effectively identifies informative regions of the input space, while the treatment of hyperparameter uncertainty governs the trade-off between computational efficiency and uncertainty quantification. The findings highlight the importance of selecting an appropriate updating strategy depending on whether accurate point prediction or reliable uncertainty estimates are the primary objective.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Yu'></a>
+<h2 style="margin-top:40px;">
+Yu Jun
+</h2>
+<p>
+<strong>Beijing Institute of Technology</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Weighted Conformal Field Design for Sensitivity Experiments (DPP)</i>
+</div>
+<br><br>
+<div>
+Multi-factor sensitivity experiments are fundamental for estimating the probability surface of a binary response and identifying critical reliability boundaries under strict budget constraints. To address the limitations of existing pointwise methods in high-dimensional settings, we propose the Weighted Conformal Field Design. First, we introduce a novel asymmetric design criterion based on filling distance that explicitly targets the manifold of interest, ensuring dense geometric coverage while strictly penalizing failure regions. Second, we develop an active learning algorithm integrating weighted conformal prediction to optimize this objective. By replacing model-dependent variance estimates with distribution-free prediction sets, our approach provides robust uncertainty quantification that remains statistically valid even in data-scarce regimes plagued by model misspecification. Supported by rigorous theoretical guarantees on validity and convergence, extensive experiments demonstrate that our algorithm significantly outperforms state-of-the-art baselines in estimation accuracy and sampling efficiency.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Zhou'></a>
+<h2 style="margin-top:40px;">
+Zhou Yongdao
+</h2>
+<p>
+<strong>Nankai University, China</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Sequential Experimental Designs for Kriging Model (DPP)</i>
+</div>
+<br><br>
+<div>
+Computer experiments have become an indispensable alternative to complex physical and engineering experiments. The Kriging model is the most widely used surrogate model, whose core goal is to minimize the discrepancy between the surrogate model and the true response model over the entire experimental domain. However, existing sequential design methods may have certain limitations. Observation-based batch sequential designs have not been sufficiently explored in existing studies, while pointwise sequential designs tend to be less efficient in terms of information utilization and resource allocation. Such methods typically require numerous iterations to accumulate sufficient information, which may lead to prolonged experimental cycles. To bridge these research gaps, this paper proposes two novel pointwise sequential design criteria and a general batch sequential design framework. Furthermore, the proposed batch sequential design framework addresses the inherent point clustering problem in naive batch selection, thereby enabling the efficient extension of any sequential criterion to batch scenarios. The proposed designs exhibit favorable robustness. Simulations on some test functions demonstrate that the proposed methods outperform existing approaches in terms of fitting accuracy in most cases, verifying the robustness of the developed approaches.
+</div>
+<div style="height:30px;">
+
+</div>
+<a id='Zhu'></a>
+<h2 style="margin-top:40px;">
+Zhu Hao
+</h2>
+<p>
+<strong>Johannes Kepler University Linz</strong>
+</p>
+<div>
+<b>TITLE:</b> <i>Amortized Predictive Expected Information Gain for Adaptive Path-Constrained Experimental Design</i>
+</div>
+<br><br>
+<div>
+Adaptive experimental design for spatial fields becomes particularly challenging when measurements must follow a feasible path, as in mobile sensing, environmental monitoring, or robotic exploration. In this setting, greedy one-step design can be short-sighted, while direct evaluation of long-horizon expected information gain is usually computationally prohibitive. We propose an amortized Bayesian design framework that combines predictive expected information gain with sequential decision-making methods for path-constrained experiments. Our utility targets information about future predictive quantities, rather than only model parameters. Under a fully Bayesian Gaussian process model, teacher utilities are obtained using nested Monte Carlo estimates of predictive expected information gain. A history-conditioned surrogate is then trained to map observed trajectories, candidate future locations, and responses to fast estimates of terminal and incremental information gain. This provides a cheap reward model for long-horizon planning. Building on this surrogate, we investigate two complementary planning mechanisms. First, a soft actor-critic policy is trained to make non-myopic path decisions under movement constraints. Second, a short-horizon model predictive control or reranking layer can refine the policy’s proposed actions using local surrogate scores, including predictive information gain and a complexity-aware term based on local curvature of the posterior predictive mean. This hybrid structure is intended to combine global long-horizon planning with local adaptive correction. The planned study compares the proposed SAC/MPC design strategy with greedy expected-information-gain policies and amortized design approaches inspired by Deep Adaptive Design. Preliminary synthetic examples are used to examine when non-greedy path planning provides advantages over one-step acquisition, especially in spatial fields with localized complex structure.
+</div>
+<div style="height:30px;">
+
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<p>© 2026 mODa board. Contact: <a
+href="martina.vandebroek@kuleuven.be">martina.vandebroek@kuleuven.be</a></p>
+</div>
+<!--/radix_placeholder_navigation_after_body-->
+
+
+</body>
+
+</html>

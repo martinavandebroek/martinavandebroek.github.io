@@ -1,0 +1,68 @@
+---
+title: "mODa14"
+description: "Slides for the Training Course on DOE"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+make_slide_block <- function(title, authors, file) {
+  cat(
+    paste0(
+      "\n\n### ", title, "\n",
+      authors, "\n\n",
+      "[click here for the slides](", file, ")\n"
+    )
+  )
+}
+
+make_slide3_block <- function(title, authors, file1,file2,file3) {
+  cat(
+    paste0(
+      "\n\n### ", title, "\n",
+      authors, "\n\n",
+      "[click here for the slides](", file1, ")\n","\n\n",
+      "[click here for the Optimal Spatial Designs Paper](", file2, ")\n","\n\n",
+      "[click here to download the related zip file](", file3, ")\n"
+    )
+  )
+}
+```
+
+```{r, results='asis'}
+make_slide_block(
+  "Foundations for Linear and nonlinear models",
+  "Jesús López Fidalgo (University of Navarra)",
+  "slides/JLFidalgo.pdf"
+)
+
+
+make_slide_block(
+  "Screening Designs",
+  "Peter Goos (KU Leuven)",
+  "slides/PGoos.pdf"
+)
+
+
+make_slide_block(
+  "GP & Bayesian Optimisation",
+  "Luc Pronzato (CNRS) — David Ginsbourger (Universität Bern)",
+  "slides/LPronzato_DGinsbourger.pdf"
+)
+
+make_slide3_block(
+  "DoE for dependent observations",
+  "Werner Müller (JKU Linz)",
+  "slides/WMuller.pdf",
+  "slides/OptimalSpatialDesigns.pdf",
+  "slides/WMuller.7z"
+)
+
+
+make_slide_block(
+  "Design of experiments in PHARMA",
+  "Valerii Fedorov",
+  "slides/VFedorov.pdf"
+)
+```

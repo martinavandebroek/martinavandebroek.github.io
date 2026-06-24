@@ -1,0 +1,27 @@
+---
+title: "mODa14"
+output:
+  distill::distill_article:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+library(htmltools)
+```
+
+<style>
+body { font-family: Arial, sans-serif; max-width: 1150px; margin: auto; line-height: 1.4; }
+.day { margin-top: 40px; border-bottom: 2px solid #333; padding-bottom: 6px; }
+.session { margin-bottom: 14px; }
+.session-row { display: flex; margin-top: 6px; align-items: flex-start; }
+.time { width: 120px; font-weight: bold; flex-shrink: 0; padding-right: 8px; }
+.session-title { font-weight: bold; flex: 1; }
+.meta { margin-left: 128px; color: #555; margin-top: 3px; line-height: 1.35; }
+.speaker { margin-left: 145px; margin-top: 8px; margin-bottom: 10px; line-height: 1.45; }
+.speaker a { margin-left: 10px; color: #0066cc; text-decoration: none; font-weight: 500; }
+.speaker a:hover { text-decoration: underline; }
+</style>
+
+```{r echo=FALSE}
+includeHTML('details_content.html')
+```
