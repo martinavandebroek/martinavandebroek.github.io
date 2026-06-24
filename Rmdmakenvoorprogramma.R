@@ -9,7 +9,7 @@ library(htmltools)
 # PATHS
 # =====================================================
 
-base_dir <- "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master"
+base_dir <- "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master-final"
 
 schedule_file <- "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/schedule_clean.xlsx"
 

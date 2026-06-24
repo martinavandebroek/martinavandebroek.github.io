@@ -13,6 +13,6 @@ mijnabstracts <- mijnabstracts %>%
     fullname = paste(`Family Name`, `First name`)
   )
 
-saveRDS(mijnabstracts, "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master/abstracts.rds")
+saveRDS(mijnabstracts, "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master-final/abstracts.rds")
 
 cat("abstracts.rds saved\n")

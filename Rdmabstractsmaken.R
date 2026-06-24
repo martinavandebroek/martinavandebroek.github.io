@@ -108,7 +108,7 @@ rmd_content <- c(header, body)
 # -----------------------------
 writeLines(
   rmd_content,
-  "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master/abstracts.Rmd"
+  "C:/Users/u0004359/OneDrive - KU Leuven/Desktop/2026moda-master-final/abstracts.Rmd"
 )
 
 cat("abstracts.Rmd successfully created\n")
