@@ -244,7 +244,7 @@ for (i in seq_len(nrow(sessions))) {
               "presentationslides/",
               slide_file[1]
             ),
-            "slides"
+            "slides or poster"
           )
         )
       }
